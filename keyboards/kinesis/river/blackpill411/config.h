@@ -4,8 +4,8 @@
 #define PIEZO_B A3
 
 #define AUDIO_PIN PIEZO_A
-#define AUDIO_PIN_ALT PIEZO_B
-#define AUDIO_PIN_ALT_AS_NEGATIVE 1 // Two pins, one speaker
+//#define AUDIO_PIN_ALT PIEZO_B
+//#define AUDIO_PIN_ALT_AS_NEGATIVE 1 // Two pins, one speaker
 
 // The ChibiOS driver to use
 #define AUDIO_PWM_DRIVER PWMD5
