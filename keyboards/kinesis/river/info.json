@@ -1,13 +1,19 @@
 {
-    "manufacturer": "DmNosachev",
-    "maintainer": "DmNosachev",
+    "manufacturer": "River Cat Electronics",
+    "maintainer": "River Cat Electronics",
     "diode_direction": "COL2ROW",
     "features": {
+        "audio": true,
+        "backlight": false,
         "bootmagic": true,
+        "command": false,
+        "console": true,
         "extrakey": true,
-        "mousekey": true
+        "mousekey": false,
+        "nkro": false,
+        "rgblight": false
     },
-    "url": "https://github.com/DmNosachev/kinbp",
+    "url": "https://river.cat/t/kinbp",
     "usb": {
         "device_version": "0.0.1",
         "pid": "0x4B4E",
