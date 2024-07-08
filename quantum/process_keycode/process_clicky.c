@@ -29,6 +29,7 @@ float clicky_rand = AUDIO_CLICKY_FREQ_RANDOMNESS;
 
 // the first "note" is an intentional delay; the 2nd and 3rd notes are the "clicky"
 float clicky_song[][2] = {{0.0f, AUDIO_CLICKY_DELAY_DURATION}, {AUDIO_CLICKY_FREQ_DEFAULT, 3}, {AUDIO_CLICKY_FREQ_DEFAULT, 1}}; // 3 and 1 --> durations
+float clicky_simple[][2] = {{AUDIO_CLICKY_FREQ_DEFAULT, 1}};
 
 extern audio_config_t audio_config;
 
@@ -41,9 +42,10 @@ void clicky_play(void) {
 #    ifndef NO_MUSIC_MODE
     if (music_activated || midi_activated || !audio_config.enable) return;
 #    endif // !NO_MUSIC_MODE
-    clicky_song[1][0] = 2.0f * clicky_freq * (1.0f + clicky_rand * (((float)rand()) / ((float)(RAND_MAX))));
-    clicky_song[2][0] = clicky_freq * (1.0f + clicky_rand * (((float)rand()) / ((float)(RAND_MAX))));
-    PLAY_SONG(clicky_song);
+    //    clicky_song[1][0] = 2.0f * clicky_freq * (1.0f + clicky_rand * (((float)rand()) / ((float)(RAND_MAX))));
+    //clicky_song[2][0] = clicky_freq * (1.0f + clicky_rand * (((float)rand()) / ((float)(RAND_MAX))));
+    //    PLAY_SONG(clicky_song);
+    PLAY_SONG(clicky_simple);
 }
 
 void clicky_freq_up(void) {
