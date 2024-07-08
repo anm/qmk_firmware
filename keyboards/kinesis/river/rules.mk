@@ -1,4 +1,6 @@
 DEFAULT_FOLDER = kinesis/river/blackpill411
-AUDIO_DRIVER = pwm_hardware
-AUDIO_ENABLE = yes
-CONSOLE_ENABLE = yes
+DEBOUNCE_TYPE = sym_eager_pk
+
+# doesn't work properly
+#AUDIO_DRIVER = pwm_hardware
+AUDIO_DRIVER = pwm_software

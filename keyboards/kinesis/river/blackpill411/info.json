@@ -1,5 +1,5 @@
 {
-    "keyboard_name": "KinBP STM32F411",
+    "keyboard_name": "Kinesis Advantage F411",
     "development_board": "blackpill_f411",
     "indicators": {
         "caps_lock": "B5",

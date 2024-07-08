@@ -6,7 +6,7 @@
         "audio": true,
         "backlight": false,
         "bootmagic": true,
-        "command": false,
+        "command": true,
         "console": true,
         "extrakey": true,
         "mousekey": false,
@@ -15,7 +15,7 @@
     },
     "url": "https://river.cat/t/kinbp",
     "usb": {
-        "device_version": "0.0.1",
+        "device_version": "0.2",
         "pid": "0x4B4E",
         "vid": "0x515A"
     },
